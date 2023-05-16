@@ -11,8 +11,12 @@ class TV:
         self.activity = activity
         self.channel = channel
         self.volume = volume
-# create a method that will indicate if the TV is on/off
-
+    # create a method that will indicate if the TV is on/off
+    def show_activity(self):
+        if self.activity.lower() == "on":
+            print(self.name, "is on")
+        else:
+            print(self.name, "is off")
 # create a method that will indicate the channel of Tv
 # create a method that will set the channel of Tv
 # create a method that will get the voulume level of the TV
