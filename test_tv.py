@@ -6,8 +6,13 @@
 # create a class named "TV"
 class TV:
     # create a constructor to initialize the objects
-    
+    def __init__(self, name, activity, channel, volume):
+        self.name = name
+        self.activity = activity
+        self.channel = channel
+        self.volume = volume
 # create a method that will indicate if the TV is on/off
+
 # create a method that will indicate the channel of Tv
 # create a method that will set the channel of Tv
 # create a method that will get the voulume level of the TV
