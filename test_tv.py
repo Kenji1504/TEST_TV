@@ -13,12 +13,15 @@ class TV:
         self.volume = volume
     # create a method that will indicate if the TV is on/off
     def show_activity(self):
-        if self.activity.lower() == "on":
+        #since it's stated that the activity should be on boolean:
+        if self.activity:
             print(self.name, "is on")
         else:
             print(self.name, "is off")
-# create a method that will indicate the channel of Tv
-# create a method that will set the channel of Tv
+    # create a method that will indicate the channel of Tv
+    def show_channel(self):
+        print(self.name, "is set on channel", self.channel)
+# create a method that will set a new channel number for the TV
 # create a method that will get the voulume level of the TV
 # create a method that will set a new volume for the tv
 # create a method that will increase the channel number by 1
