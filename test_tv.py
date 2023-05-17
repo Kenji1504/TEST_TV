@@ -37,7 +37,13 @@ class TV:
             self.channel = 1
         else:
             return
-# create a method that will decrease the channel number by 1
-# create a method that will increase the volume level by 1
+    # create a method that will decrease the channel number by 1
+    def channel_down(self):
+        self.channel -= 1
+        if self.channel < 1:
+            self.channel = 120
+        else:
+            return
+    # create a method that will increase the volume level by 1
 # create a method that will decrease the volume level by 1
 # create two objects that satisfy the following arguments in the constructor
