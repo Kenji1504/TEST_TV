@@ -30,7 +30,13 @@ class TV:
     # create a method that will set a new volume for the tv
     def set_volume(self, new_volume):
         self.volume = new_volume
-# create a method that will increase the channel number by 1
+    # create a method that will increase the channel number by 1
+    def channel_up(self):
+        self.channel += 1
+        if self.channel > 120:
+            self.channel = 1
+        else:
+            return
 # create a method that will decrease the channel number by 1
 # create a method that will increase the volume level by 1
 # create a method that will decrease the volume level by 1
