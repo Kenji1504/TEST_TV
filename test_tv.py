@@ -52,4 +52,10 @@ class TV:
         else:
             return
 # create a method that will decrease the volume level by 1
+    def volume_down(self):
+        self.volume -= 1
+        if self.volume < 0:
+            self.volume = 0
+        else:
+            return
 # create two objects that satisfy the following arguments in the constructor
