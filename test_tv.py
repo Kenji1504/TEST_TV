@@ -2,7 +2,7 @@
 # BSCPE 1-5
 # This is an object-oriented program that tests particular functions of a TV.
 
-
+import time
 # create a class named "TV"
 class TV:
     # create a constructor to initialize the objects
@@ -15,17 +15,20 @@ class TV:
     def show_activity(self):
         #since it's stated that the activity should be on boolean:
         if self.activity:
+            time.sleep(1)
             print(self.name, "is on\n")
         else:
             print(self.name, "is off\n")
     # create a method that will indicate the channel of Tv
     def show_channel(self):
+        time.sleep(1)
         print(self.name, "is set on channel", self.channel, "\n")
     # create a method that will set a new channel number for the TV
     def set_channel(self, new_channel):
         self.channel = new_channel
     # create a method that will get the voulume level of the TV
     def show_volume(self):
+        time.sleep(1)
         print(self.name, "is set on volume level", self.volume, "\n")
     # create a method that will set a new volume for the tv
     def set_volume(self, new_volume):
@@ -60,4 +63,5 @@ class TV:
             return
 # create a method that will indicatee the status of the television
     def indicate_status(self):
+        time.sleep(1)
         print(self.name + "'s set at channel", self.channel, "and has volume level", self.volume, "\n")
