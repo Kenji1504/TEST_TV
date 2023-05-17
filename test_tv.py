@@ -27,7 +27,9 @@ class TV:
     # create a method that will get the voulume level of the TV
     def show_volume(self):
         print(self.name, "is set on volume level", self.volume)
-# create a method that will set a new volume for the tv
+    # create a method that will set a new volume for the tv
+    def set_volume(self, new_volume):
+        self.volume = new_volume
 # create a method that will increase the channel number by 1
 # create a method that will decrease the channel number by 1
 # create a method that will increase the volume level by 1
