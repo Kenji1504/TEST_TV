@@ -58,4 +58,6 @@ class TV:
             self.volume = 0
         else:
             return
-# create two objects that satisfy the following arguments in the constructor
+# create a method that will indicatee the status of the television
+    def indicate_status(self):
+        print(self.name + "'s set at channel", self.channel, "and has volume level", self.volume)
